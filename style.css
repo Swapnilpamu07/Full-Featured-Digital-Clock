@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+@font-face {
+    font-family: "clockicons";
+    src: url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot");
+    src: url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.svg#clockicons")format("svg");
+}
+.navbar {
+    display: flex;
+    height: 4rem;
+    width: auto;
+    background-color: transparent;
+    box-shadow: 2px 2px 20px white;
+}
+.navbar ul{
+    display: flex;
+    width: 77rem;
+    width: fit-content;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.navbar ul li{
+    display: flex;
+    margin-left: 50px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    margin: 12px;
+    color: #ffc738;
+    font-size: 22px;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.container .time{
+    color: #FF9500 ;
+    font-size: 8rem;
+    font-family: clockicons, sans-serif;
+}
+.container .day{
+    color:#FF9500 ;
+    margin-top: 20px;
+    font-family: "Grey Qo", cursive;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.container .bt button{
+    display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-top: 20px;
+  touch-action: manipulation;
+}
+.modal{
+    color:black;
+    display: none;
+    width: fit-content;
+    /* padding: 20px; */
+    position: absolute;
+    top: 28%;
+    left: 38%;
+    height: fit-content;
+    background-color:#1ABC9C;
+}
+.modal h1{
+    color: black;
+    background-color: #67d6c0;
+     margin: 0px 0px 10px 0px;
+}
+.modal button{
+    width: 20%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.timer {
+    color: black;
+    display: none;
+    width: fit-content;
+    position: absolute;
+    top: 28%;
+    left: 38%;
+    height: fit-content;
+    background-color: #1ABC9C;
+    padding: 20px;
+    border-radius: 10px;
+}
+.timer h1{
+    color: black;
+    background-color: #67d6c0;
+    margin: 0px 0px 10px 0px;
+}
+.timer button{
+    width: 20%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.stopwatch {
+    color: black;
+    display: none;
+    width: fit-content;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    height: fit-content;
+    background-color: #1ABC9C;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#stopwatchDisplay {
+    background-color: #8ee7d7;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.stopwatch button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.stopwatch button:hover {
+    background-color: #0056b3;
+}
