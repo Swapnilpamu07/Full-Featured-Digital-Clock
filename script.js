@@ -181,6 +181,7 @@ stopStopwatch.onclick = function () {
         stopwatchRunning = false;
     }
 };
+ 
 
 // Reset the stopwatch
 resetStopwatch.onclick = function () {
